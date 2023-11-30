@@ -98,19 +98,25 @@ body {
 
 .sidebar {
   transition: translate var(--animation-timing);
-  display: none;
+  /* display: none; */
+  translate: 150%;
   padding-left: 1em;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color:rgb(160, 160, 150);
   color: var(--background);
   max-width: 10rem;
   min-height: 40vh;
+  position: fixed;
+  margin-right: 0;
+  width: 400px;
+  right: 1px;
+
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
     transition: var(--animation-timing);
     display: grid;
-    translate: 0 0;
+    translate: 0 ;
 }
 .sidebar li{
     list-style: none;
@@ -130,8 +136,6 @@ body {
 .sidebar {
     background-color: #f4f4f4; /* Set your preferred background color for the sidebar */
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 10px;
 }
 
 .sidebar li {
@@ -657,7 +661,141 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
+/*-- contact page layout --*/
+
+.cont-body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh auto 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.cont-header{
+    grid-area: "header";
+    background-color: antiquewhite;
 
 }
+.cont-main{
+    grid-area:"main";
+    display: grid;
+    grid-template-columns: 1fr;
+    height:max-content;
+    margin: 20px;
+    background-color: #fdfafae0;
+}
+.cont-main h1{
+    color: rgb(18, 20, 72);
+    font-family: monospace;
+    padding-left: 20px;
+    text-decoration: wavy;
+    font-size: 4em;
+    text-align: center;
+    color: darkslategrey;
+}
+.cont-main .frt{
+    padding: 5px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: rgba(42, 53, 49, 0.904);
+}
+.cont-main .snd{
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: rgba(42, 53, 49, 0.904);
+}
+.cont-main .trd{
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(42, 53, 49, 0.904);
+}
+.cont-footer{
+    grid-area: "footer";
+}
   
+/*-- contact main form --*/
 
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+ 
+}
+.form input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form textarea{
+    outline: none;
+    border: none;
+    background-color: #f3e9e900;
+    margin: 10px;
+    max-width: 75vw;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-form{
+    border: 2px solid #110909;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(192, 216, 216);
+    box-shadow: 14px 0 20px rgba(153, 9, 9, 0.1);
+    
+
+
+}
+.sub-form img{
+    padding-left: .5em;
+    width: 2em;
+    height: 2em; 
+    margin-top: 0;
+}
+
+.sub-form input::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #110909;
+}
+.sub-form textarea::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #110909;
+}
+
+
+.sub-form:hover,
+.sub-form input:hover{
+    /* change border color, background color also add transition to the chaneg*/
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(192, 216, 216);
+    box-shadow: 14px 0 20px rgba(153, 9, 9, 0.1);
+    transition: var(--animation-timing);
+    box-shadow:1 2 1 1 #333;
+    background-color: rgb(201, 206, 219);
+    color: #362d2d;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+/* -- end of contact page -- */
+
+/* -- portfolio page layout -- */
+
+
+}
