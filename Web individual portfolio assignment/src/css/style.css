@@ -35,7 +35,6 @@ body {
 
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
@@ -48,6 +47,7 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
+    position: fixed;
   --foreground: rgb(129, 39, 39);
   --background: #333;
 }
@@ -707,13 +707,8 @@ body {
 /*-- contact page layout --*/
 
 .cont-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh auto 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    display: flex;
+    flex-direction: column;
 }
 .cont-header{
     grid-area: "header";
@@ -738,22 +733,24 @@ body {
     color: darkslategrey;
 }
 .cont-main .frt{
+    margin-top: 1em;
     padding: 5px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
+    font-size: 10vw;
     color: rgba(42, 53, 49, 0.904);
 }
 .cont-main .snd{
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
+    font-size: 5vw;
+
     color: rgba(42, 53, 49, 0.904);
 }
 .cont-main .trd{
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5em;
+    font-size: 9vw;
     font-weight: bold;
     color: rgba(42, 53, 49, 0.904);
 }
@@ -764,8 +761,8 @@ body {
 /*-- contact main form --*/
 
 .form{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -821,7 +818,6 @@ body {
 
 .sub-form:hover,
 .sub-form input:hover{
-    /* change border color, background color also add transition to the chaneg*/
     border-radius: 10px;
     margin-top: 20px;
     background-color: rgb(192, 216, 216);
@@ -841,9 +837,10 @@ body {
 /* -- portfolio page layout -- */
 
 .port-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25vh auto 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    column-gap: 1em;
+
 }
 .port-main{
     display: grid;
