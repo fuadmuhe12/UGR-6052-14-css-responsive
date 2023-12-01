@@ -334,6 +334,15 @@ body {
 .item:hover p {
     color: #164747; 
 }
+.home-section h2{
+    color: rgb(18, 20, 72);
+    font-family: monospace;
+    padding-left: 20px;
+    text-decoration: wavy;
+    font-size: 2em;
+    text-align: center;
+
+}
 .home-section{
     display: grid;
     grid-template-columns: 1fr ;
@@ -422,6 +431,8 @@ body {
     box-shadow: 0 0 0 0.25rem #000;
     opacity: 0.75;
 }  
+.slider-nav a:focus,
+.slider-nav a:visited,
 .slider-nav a:hover{
     background-color: #3498db;
     box-shadow:  0 0 0 0.25rem #000;
@@ -946,6 +957,24 @@ body {
   
   .port-aside .social img:hover {
     transform: scale(1.2); /* Add a hover effect */
+  }
+  .port-main h1{
+    color: rgb(18, 20, 72);
+    font-family: monospace;
+    padding-left: 1em;
+    text-decoration: wavy;
+    font-size: 3em;
+    text-align: center;
+    color: darkslategrey;
+  }
+  .project h2{
+    font-family:monospace;
+    text-align: center;
+    font-size: 2em;
+    color: #121e63;
+    padding: .5em;
+    
+
   }
   
 }
