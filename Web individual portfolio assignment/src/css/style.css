@@ -1178,5 +1178,30 @@ body {
     .cont-main .trd{
         font-size: 2em;
     }
+   /* portfolio page layout */
+   .port-main h1{
+    font-size: 4em;
+   } 
+   .port-main section .project-slider{
+        width: fit-content;
+        justify-items:stretch ;
+        align-items: stretch;
+   }
+   .port-main .slider{
+        max-width: 30em;
+        height: 42em;
+        align-content: stretch;
+        justify-content: stretch;
+        align-content: stretch;
 
 
+   }
+
+   .port-main .project{
+        width: 40em;
+        height: 40em;
+   }
+   
+
+
+}
