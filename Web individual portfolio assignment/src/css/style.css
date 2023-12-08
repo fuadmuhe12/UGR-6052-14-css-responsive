@@ -1,6 +1,3 @@
-
-
- 
 *,
 *::after,
 *::before {
@@ -767,8 +764,9 @@ body {
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 25px 0px rgba(96, 73, 113, 1);
     border-radius: 10px;
+    margin: 1em;
  
 }
 .form input{
@@ -805,6 +803,11 @@ body {
     height: 2em; 
     margin-top: 0;
 }
+.sub-form input{
+    width: 95%;
+    height: 3em;
+    margin: 0px;
+}
 
 .sub-form input::placeholder{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -818,8 +821,7 @@ body {
 }
 
 
-.sub-form:hover,
-.sub-form input:hover{
+.sub-form:hover{
     border-radius: 10px;
     margin-top: 20px;
     background-color: rgb(192, 216, 216);
@@ -1047,6 +1049,7 @@ body {
         background: #55BFCF;
         background: linear-gradient(to bottom right, #55BFCF 0%, #9E3212 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .home-main h2{
@@ -1056,6 +1059,7 @@ body {
         background: #55BFCF;
         background: linear-gradient(to bottom right, #55cf57 0%, #122e9e 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         text-justify:inter-word ;
         display: block;
@@ -1159,8 +1163,20 @@ body {
         width: 50em;
         height: 30em;
     }
+    /* contact page layout */
 
+    .cont-main h1{
+        font-size: 5em;
 
+    }
+    .cont-main .frt{
+        font-size: 2em;
+    }
+    .cont-main .snd{
+        font-size: 1.5em;
+    }
+    .cont-main .trd{
+        font-size: 2em;
     }
 
 
