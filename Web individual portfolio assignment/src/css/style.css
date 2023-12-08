@@ -1124,5 +1124,43 @@ body {
     .skill{
         transform: scale(0.8);
     }
+    /* service page layout */
+    .ser-main h1{
+        font-size: 3em;
+    }
+    .ser-main > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .ser-item{
+        width: fit-content;
+        height: fit-content;
+        
+    }
+    .ser-item h2{
+        font-size: 2em;
+    }
+    .ser-item p{
+        font-size: 1.3em;
+    }
+    .one{
+        grid-column: 1/2;
+    }
+    .two{
+        grid-column: 2/3;
+    }
+    .three{
+       justify-self: center;
+       grid-column: span 2;
+    
+    }
+    .ser-body video{
+        width: 50em;
+        height: 30em;
+    }
 
-}
+
+    }
+
+
