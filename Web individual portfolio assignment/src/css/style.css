@@ -1213,32 +1213,45 @@ body {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     gap:0em;
     column-gap: 2em;
+    grid-template-rows: auto auto auto auto;
    }
    .port-body header{
+    grid-row: 1/2;
     grid-column:span 4;
    }
    .port-body .port-main{
+    grid-row: 2/3;
     grid-column:span 3;
 
    }
-   .port-main .port-section .cont{
-        width : 100%;
+   .port-section .cont{
+        width : 60%;
         margin-bottom: 1em;
         padding-left: .5em;
         padding-right: .5em;
 
    }
+   .port-section{
+        grid-row: 3/4;
+        grid-column: span 4;
+
+   }
     .port-body .port-aside{
+        grid-row: 2/3;
         height: max-content;
-        width: 100%;
+        max-width: 40vw;
+        width: fit-content;
         display: flex;
+        justify-content: flex-end;
         flex-direction: column;
         align-self: center;
-         grid-column:span 1;
+        grid-column:4/5;
     }
     .port-footer{
+        grid-row: 4/5;
         grid-column:span 4;
     }
     .hoby {
@@ -1445,4 +1458,8 @@ body {
     margin-top: 1em;
     font-size: 3em;
 }
+
+/* portfolio page pc layout */
+
+
 }
