@@ -1390,11 +1390,38 @@ body {
 .about-section .skill {
     transform: scale(1);
     width: fit-content;
-    height: stretch;
 }
 .about-section .skill:hover{
     transform: scale(1.1);
-    transition: var(--animation-timing);
+}
+/* service page pc layout */
+.ser-main  > div{
+    display: flex;
+    margin-top: 4em;
+    align-items: stretch;
+
+}
+.ser-item{
+    height: inherit;
+}
+.ser-main h1{
+    font-size: 4em;
+    text-align: center;
+
+}
+/* .ser-main .one{
+    grid-column: 1/2;
     
 }
+.ser-main .two{
+    grid-column: 2/3;
+   
+}
+.ser-main .three{
+    grid-column: 3/4;
+    
+} */
+
+
+
 }
