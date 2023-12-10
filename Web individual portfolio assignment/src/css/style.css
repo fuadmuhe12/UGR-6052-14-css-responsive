@@ -524,9 +524,10 @@ body {
     font-size: larger;
 }
 .about-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #fdfdff;
+    align-items: center;
 
     
 }
@@ -1132,7 +1133,8 @@ body {
         font-size: 1.5em;
     }
     .skill{
-        transform: scale(0.8);
+        width: fit-content;
+        transform: scale(.9);
     }
     /* service page layout */
     .ser-main h1{
@@ -1285,7 +1287,7 @@ body {
     .header-body{
         max-width: 100vw;
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 3fr;
     }
     .sidebar{
         right: initial;
@@ -1305,7 +1307,7 @@ body {
     
     .sidebar li{
         transform: scale(1.3);
-        padding: 1em;
+        padding-bottom: 1em;
         width: fit-content;
     }
 
@@ -1347,10 +1349,52 @@ body {
         font-size: 1.5em;
     }
 
+    /* about page pc layout */
+    .about-main{
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .about-main .about-main-article{
+        width: 100%;
+        grid-column: 1/2;
+        grid-row:  1/2;
+    }
+    .about-main picture{
+        grid-row: 1/2;
+        width: 100%;
+        grid-column: 2/3;
+        align-self: center;
+        transform: scale(1.5);
+    }
+    .about-main .about-section{
+        grid-row: 1/2;
+        width: 100%;
+        grid-column: 3/4;
+    }
+    .iframe{
+        max-width: 30vw;
+    }
+    .about-main .about-main-article div{
+        width: 30vw;
+}
+    .about-main .about-main-article h1{
+        font-size: 6em;
+        width: 30vw;
+        text-align: center;
+}
+.about-section h2{
+    font-size: 6em;
+}
+.about-section .skill {
+    transform: scale(1);
+    width: fit-content;
+    height: stretch;
+}
+.about-section .skill:hover{
+    transform: scale(1.1);
+    transition: var(--animation-timing);
     
-
-
-
-
-    
+}
 }
