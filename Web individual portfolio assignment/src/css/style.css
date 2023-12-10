@@ -445,7 +445,6 @@ body {
     opacity: 0.75;
 }  
 .slider-nav a:focus,
-.slider-nav a:visited,
 .slider-nav a:hover{
     background-color: #3498db;
     box-shadow:  0 0 0 0.25rem #000;
@@ -956,6 +955,7 @@ body {
   }
   
   .port-aside address p {
+    overflow: hidden;
     margin: 0;
     font-size: 1.3em;
   }
@@ -1032,6 +1032,11 @@ body {
   }
   
 /* media query of min width of 450px */
+@media (max-width:700px)  {
+   #port-aside{
+        display: none;
+    }
+}
 @media (min-width: 450px){
     /* home page layout */
     .home-body{
@@ -1460,6 +1465,7 @@ body {
 }
 
 /* portfolio page pc layout */
+
 
 
 }
