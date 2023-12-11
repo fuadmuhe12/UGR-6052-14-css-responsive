@@ -216,6 +216,9 @@ body {
 .home-main article{
     order: 2;
 }
+.home-main .socio-about{
+    order: 3;
+}
 .hero-img{
     width: 70%;
     /* hight be the calculated value of the width after the screen size*/
